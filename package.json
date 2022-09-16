@@ -1,0 +1,29 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "format": "prettier --single-quote --trailing-comma all --tab-width 4 --write **/*.{js,json,css}",
+    "start": "nodemon server.js",
+    "fm": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,json,css}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "fastify": "^4.6.0",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
+  }
+}
